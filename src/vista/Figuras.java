@@ -5,15 +5,16 @@ import java.awt.Graphics;
 
 import javax.swing.JFrame;
 
-public class Movimiento2 extends JFrame {
+public class Figuras extends JFrame {
 
 	Color color;
 
-	public Movimiento2() {
+	public Figuras() {
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setExtendedState(MAXIMIZED_BOTH);
 		setVisible(true);
 		color = new Color(124);
+		setBounds(20, 50, 90, 30);
 		setBackground(new Color(200, 50, 50));
 		stB();
 	}
@@ -37,7 +38,7 @@ public class Movimiento2 extends JFrame {
 	// torres
 
 	public static void main(String... args) {
-		new Movimiento2();
+		new Figuras();
 	}
 
 	@Override
